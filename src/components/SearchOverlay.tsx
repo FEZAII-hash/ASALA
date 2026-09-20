@@ -63,7 +63,7 @@ const SearchOverlay: React.FC = () => {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Rechercher un caftan, une jebba, une takchita, une robe..."
+              placeholder="Rechercher un caftan, une jebba, une robe..."
               className="w-full bg-transparent text-[18px] lg:text-[22px] font-normal text-black outline-none placeholder:text-stone/60 border-none p-0"
             />
             {query && (
@@ -79,7 +79,7 @@ const SearchOverlay: React.FC = () => {
           {/* Suggestions */}
           <div className="flex flex-wrap items-center gap-2 mt-4 text-[11px]">
             <span className="text-stone uppercase tracking-wider mr-2">Suggestions :</span>
-            {["Caftan", "Takchita", "Jebba", "Robe", "Cérémonie", "Soie", "Or"].map((tag) => (
+            {["Caftan", "Jebba", "Robe", "Soie", "Or"].map((tag) => (
               <button
                 key={tag}
                 onClick={() => setQuery(tag)}
