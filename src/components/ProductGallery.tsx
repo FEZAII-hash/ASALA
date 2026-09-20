@@ -12,10 +12,10 @@ const ProductGallery: React.FC<Props> = ({ images, name, isNew }) => {
   const currentImage = images[active] || images[0] || "/hero-model.jpg";
 
   return (
-    <div className="flex flex-col-reverse sm:flex-row gap-3 sm:gap-4 w-full">
+    <div className="flex min-w-0 flex-col-reverse gap-3 sm:flex-row sm:gap-4 w-full">
       {/* Vertical thumbnails on the left */}
       {images.length > 1 && (
-        <div className="flex sm:flex-col gap-3 overflow-x-auto sm:w-20 shrink-0 select-none no-scrollbar">
+        <div className="flex sm:flex-col gap-2.5 overflow-x-auto sm:w-20 shrink-0 select-none no-scrollbar">
           {images.map((image, index) => {
             const isSelected = active === index;
             return (
@@ -41,7 +41,7 @@ const ProductGallery: React.FC<Props> = ({ images, name, isNew }) => {
       )}
 
       {/* Main large image */}
-      <div className="relative flex-1 aspect-[3/4] overflow-hidden bg-[#f4f2ee] select-none">
+      <div className="relative min-w-0 flex-1 aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-[#f4f2ee] select-none">
         <ProductImage
           src={currentImage}
           alt={name}
