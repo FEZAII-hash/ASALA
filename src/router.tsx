@@ -40,8 +40,6 @@ const router = createBrowserRouter([
       { path: "caftans", element: <CategoryPage category="Caftan" /> },
       { path: "robes", element: <CategoryPage category="Robe" /> },
       { path: "jebbas", element: <CategoryPage category="Jebba" /> },
-      { path: "takchitas", element: <CategoryPage category="Takchita" /> },
-      { path: "ceremonie", element: <Navigate to="/collection" replace /> },
       { path: "accessoires", element: <CategoryPage category="Accessoire" /> },
 
       // Brand pages
