@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
       <ServiceBar />
 
       {/* 2. NOUVEAUTÉS — SECTION ÉDITORIALE (ITEM 10) */}
-      <section className="py-14 sm:py-20 lg:py-24 border-b border-black/10">
+      <section className="home-section py-14 sm:py-20 lg:py-24 border-b border-black/10">
         <div className="asala-container">
           {/* Editorial Section Header */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12 pb-5 sm:pb-6 border-b border-black/15">
@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* 3. SECTION COLLECTIONS — COMPOSITION ASYMÉTRIQUE (ITEM 36) */}
-      <section className="py-14 sm:py-20 lg:py-24 bg-[#faf9f6] border-b border-black/10">
+      <section className="home-section py-14 sm:py-20 lg:py-24 bg-[#faf9f6] border-b border-black/10">
         <div className="asala-container">
           <div className="max-w-[520px] mb-10 sm:mb-12 lg:mb-16">
             <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] text-stone font-medium">
@@ -82,12 +82,11 @@ const HomePage: React.FC = () => {
             </p>
           </div>
 
-          {/* Asymmetric composition grid */}
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-12 lg:gap-6">
-            {/* Large Tile: CAFTANS (col-span-7) */}
+          {/* Equal collection cards */}
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             <Link
               to="/caftans"
-              className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[4/5] md:col-span-1 lg:col-span-5 lg:row-start-1 lg:row-span-2 lg:aspect-[4/5]"
+              className="group relative block aspect-[4/5] overflow-hidden bg-[#f4f2ee]"
             >
               <ProductImage
                 src="/hero-model.jpg"
@@ -114,7 +113,7 @@ const HomePage: React.FC = () => {
             {/* Lower Tiles: JEBBAS and ROBES */}
             <Link
               to="/jebbas"
-              className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[4/5] md:col-span-1 lg:col-start-6 lg:col-span-3 lg:row-start-2 lg:aspect-[4/5]"
+              className="group relative block aspect-[4/5] overflow-hidden bg-[#f4f2ee]"
             >
               <ProductImage
                 src="https://images.unsplash.com/photo-1587524285872-d2c1dfc5c21e?auto=format&fit=crop&w=800&q=85"
@@ -140,7 +139,7 @@ const HomePage: React.FC = () => {
 
             <Link
               to="/robes"
-              className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[4/5] md:col-span-1 lg:col-start-9 lg:col-span-3 lg:row-start-2 lg:aspect-[4/5]"
+              className="group relative block aspect-[4/5] overflow-hidden bg-[#f4f2ee]"
             >
               <ProductImage
                 src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85"
@@ -169,7 +168,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* 4. CAFTANS — FOCUS ÉDITORIAL */}
-      <section className="py-14 sm:py-20 lg:py-24 border-b border-black/10">
+      <section className="home-section py-14 sm:py-20 lg:py-24 border-b border-black/10">
         <div className="asala-container">
           {/* Editorial Split Banner */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-12 sm:mb-16">
@@ -216,7 +215,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* 5. JEBBAS — TRADITION & PURETÉ CONTEMPORAINE */}
-      <section className="py-14 sm:py-20 lg:py-24 bg-[#faf9f6] border-b border-black/10">
+      <section className="home-section py-14 sm:py-20 lg:py-24 bg-[#faf9f6] border-b border-black/10">
         <div className="asala-container">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12 pb-5 sm:pb-6 border-b border-black/15">
             <div>
@@ -248,7 +247,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* 6. JEBBAS — GRAND APPARAT */}
-      <section className="relative min-h-[460px] sm:min-h-[540px] lg:min-h-[640px] flex items-center justify-center overflow-hidden bg-black text-white">
+      <section className="home-section relative min-h-[460px] sm:min-h-[540px] lg:min-h-[640px] flex items-center justify-center overflow-hidden bg-black text-white">
         <ProductImage
           src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=85"
           alt="Collection Jebbas Haute Couture ASALA"
@@ -280,7 +279,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* 7. NEWSLETTER — LA LETTRE ASALA */}
-      <section className="py-14 sm:py-20 bg-[#f8f7f5] border-b border-black/10">
+      <section className="home-section py-14 sm:py-20 bg-[#f8f7f5] border-b border-black/10">
         <div className="asala-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-5">
