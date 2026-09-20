@@ -82,8 +82,8 @@ const ProductPage: React.FC = () => {
       </div>
 
       {/* Main Product Layout (55% Gallery / 45% Info with generous gap) */}
-      <main className="asala-container py-8 sm:py-10 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-8 sm:gap-12 xl:gap-20 items-start">
+      <main className="asala-container py-6 sm:py-10 lg:py-16">
+        <div className="grid min-w-0 grid-cols-1 items-start gap-8 sm:gap-12 lg:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] lg:gap-12 xl:gap-16">
           
           {/* LEFT: 55% GALLERY */}
           <div className="w-full">
@@ -95,16 +95,16 @@ const ProductPage: React.FC = () => {
           </div>
 
           {/* RIGHT: 45% PRODUCT INFORMATION */}
-          <div className="w-full flex flex-col">
+          <div className="flex min-w-0 w-full flex-col lg:sticky lg:top-28">
             {/* 1. Catégorie (spacing 16px) */}
             <p className="text-[11px] uppercase tracking-[0.18em] text-stone font-medium mb-3 sm:mb-4">
               {product.category}
             </p>
 
             {/* 2. Nom du produit (36-48px) (spacing 12px) */}
-            <div className="flex items-start justify-between gap-4 mb-3">
+            <div className="flex min-w-0 items-start justify-between gap-3 mb-3">
               <h1
-                className="text-[26px] xs:text-[32px] sm:text-[40px] xl:text-[44px] font-normal leading-[1.05] tracking-tight text-black"
+                className="min-w-0 flex-1 text-[26px] xs:text-[32px] sm:text-[40px] xl:text-[44px] font-normal leading-[1.05] tracking-tight text-black"
                 style={{ fontFamily: '"Bodoni Moda", Georgia, serif' }}
               >
                 {product.name}
@@ -123,8 +123,8 @@ const ProductPage: React.FC = () => {
             </div>
 
             {/* 3. Prix (spacing 20px) */}
-            <div className="flex items-center gap-3 mb-5">
-              <span className="text-[22px] font-normal text-black">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5">
+              <span className="text-[21px] sm:text-[22px] font-normal text-black">
                 {product.price} TND
               </span>
               {product.originalPrice && product.originalPrice > product.price && (
@@ -132,13 +132,13 @@ const ProductPage: React.FC = () => {
                   {product.originalPrice} TND
                 </span>
               )}
-              <span className="text-[11px] text-stone uppercase tracking-widest pl-2 border-l border-black/15">
+              <span className="text-[10px] sm:text-[11px] text-stone uppercase tracking-widest sm:pl-2 sm:border-l sm:border-black/15">
                 TVA incluse
               </span>
             </div>
 
             {/* 4. Description courte (spacing 28px) */}
-            <p className="text-[14px] leading-relaxed text-stone font-normal mb-7">
+            <p className="max-w-2xl text-[13px] sm:text-[14px] leading-relaxed text-stone font-normal mb-7">
               {product.description}
             </p>
 
@@ -205,7 +205,7 @@ const ProductPage: React.FC = () => {
             )}
 
             {/* 7. Quantité */}
-            <div className="flex items-center gap-4 mb-7">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-7">
               <span className="text-[11px] uppercase tracking-[0.16em] font-medium text-black">
                 Quantité
               </span>
