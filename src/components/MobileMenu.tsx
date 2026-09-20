@@ -16,8 +16,6 @@ const defaultLinks = [
   { label: "Caftans", href: "/caftans" },
   { label: "Robes", href: "/robes" },
   { label: "Jebbas", href: "/jebbas" },
-  { label: "Takchitas", href: "/takchitas" },
-  { label: "Cérémonie", href: "/ceremonie" },
   { label: "Accessoires", href: "/accessoires" },
 ];
 
