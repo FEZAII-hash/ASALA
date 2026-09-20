@@ -19,10 +19,8 @@ interface Props {
 
 const categoryLabels: Record<string, string> = {
   Caftan: "Caftans",
-  Takchita: "Takchitas",
   Jebba: "Jebbas",
   Robe: "Robes",
-  CÉRÉMONIE: "Cérémonie",
   Accessoire: "Accessoires",
 };
 
