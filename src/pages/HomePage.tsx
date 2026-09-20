@@ -111,34 +111,7 @@ const HomePage: React.FC = () => {
               </div>
             </Link>
 
-            {/* Medium Tile: TAKCHITAS (col-span-5) */}
-            <Link
-              to="/takchitas"
-              className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[16/10] md:col-span-1 lg:col-start-6 lg:col-span-7 lg:row-start-1 lg:aspect-[16/9]"
-            >
-              <ProductImage
-                src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1000&q=85"
-                alt="Collection Takchitas ASALA"
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 text-white">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-white/80 font-medium">
-                  Prestige & Apparat
-                </p>
-                <h3
-                  className="text-[28px] sm:text-[34px] font-normal leading-tight mt-1"
-                  style={{ fontFamily: '"Bodoni Moda", Georgia, serif' }}
-                >
-                  TAKCHITAS
-                </h3>
-                <span className="mt-4 inline-flex items-center gap-2 border-b border-white pb-0.5 text-[10px] uppercase tracking-[0.16em] font-medium">
-                  Découvrir <ArrowRight size={13} strokeWidth={1.5} />
-                </span>
-              </div>
-            </Link>
-
-            {/* 3 Balanced Lower Tiles: JEBBAS (col-span-4), ROBES (col-span-4), CÉRÉMONIE (col-span-4) */}
+            {/* Lower Tiles: JEBBAS and ROBES */}
             <Link
               to="/jebbas"
               className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[4/5] md:col-span-1 lg:col-start-6 lg:col-span-3 lg:row-start-2 lg:aspect-[4/5]"
@@ -191,31 +164,6 @@ const HomePage: React.FC = () => {
               </div>
             </Link>
 
-            <Link
-              to="/ceremonie"
-              className="group relative block overflow-hidden bg-[#f4f2ee] aspect-[16/10] md:col-span-2 lg:col-start-7 lg:col-span-6 lg:row-start-3 lg:aspect-[16/8]"
-            >
-              <ProductImage
-                src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=85"
-                alt="Collection Cérémonie ASALA"
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-white/80 font-medium">
-                  Jours d'Émotion
-                </p>
-                <h3
-                  className="text-[24px] sm:text-[28px] font-normal leading-tight mt-1"
-                  style={{ fontFamily: '"Bodoni Moda", Georgia, serif' }}
-                >
-                  CÉRÉMONIE
-                </h3>
-                <span className="mt-3 inline-flex items-center gap-2 border-b border-white pb-0.5 text-[10px] uppercase tracking-[0.16em] font-medium">
-                  Explorer <ArrowRight size={12} strokeWidth={1.5} />
-                </span>
-              </div>
-            </Link>
           </div>
         </div>
       </section>
@@ -299,11 +247,11 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. CÉRÉMONIE — GRAND APPARAT */}
+      {/* 6. JEBBAS — GRAND APPARAT */}
       <section className="relative min-h-[460px] sm:min-h-[540px] lg:min-h-[640px] flex items-center justify-center overflow-hidden bg-black text-white">
         <ProductImage
           src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=85"
-          alt="Collection Cérémonie Haute Couture ASALA"
+          alt="Collection Jebbas Haute Couture ASALA"
           className="absolute inset-0 w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -315,17 +263,17 @@ const HomePage: React.FC = () => {
             className="text-[26px] xs:text-[36px] sm:text-[54px] lg:text-[68px] font-normal leading-[1] text-white mt-3 sm:mt-4"
             style={{ fontFamily: '"Bodoni Moda", Georgia, serif' }}
           >
-            L'ART DE LA CÉRÉMONIE
+            L'ART DE LA JEBBA
           </h2>
           <div className="w-12 h-px bg-white/60 mx-auto my-4 sm:my-6" />
           <p className="text-[13px] sm:text-[15px] leading-relaxed text-white/90 font-light max-w-xl mx-auto mb-6 sm:mb-8">
             Mariages, fiançailles et célébrations prestigieuses : des créations d'exception confectionnées avec patience pour sublimer vos moments inoubliables.
           </p>
           <Link
-            to="/ceremonie"
+            to="/jebbas"
             className="inline-flex items-center justify-center gap-3 border border-white bg-transparent text-white px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] uppercase tracking-[0.16em] font-medium hover:bg-white hover:text-black transition-colors w-full sm:w-auto text-center"
           >
-            <span>Explorer la collection cérémonie</span>
+            <span>Explorer la collection jebba</span>
             <ArrowRight size={14} strokeWidth={1.5} />
           </Link>
         </div>
