@@ -29,13 +29,13 @@ const slides: Slide[] = [
   },
   {
     id: "02",
-    tagline: "ÉDITION CÉRÉMONIE — HAUTE COUTURE",
+    tagline: "ÉDITION JEBBA — HAUTE COUTURE",
     arabicTitle: "أصالة",
     titleLines: ["SPLENDEUR", "& MAJESTÉ"],
     description:
-      "L’art de la takchita et du caftan d’apparat.\nBroderies au fil d'or et soies d'art pour vos célébrations les plus précieuses.",
-    ctaText: "Explorer la cérémonie",
-    ctaLink: "/ceremonie",
+      "L’art de la jebba et du caftan d’apparat.\nBroderies au fil d'or et soies d'art pour vos célébrations les plus précieuses.",
+    ctaText: "Explorer les jebbas",
+    ctaLink: "/jebbas",
     image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=85",
     objectPosition: "center center",
   },
