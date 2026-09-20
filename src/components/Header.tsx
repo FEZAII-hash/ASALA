@@ -6,13 +6,11 @@ import MobileMenu from "./MobileMenu";
 import { useCart } from "@/context/CartContext";
 
 const navLinks = [
-  { label: "Nouveautés", href: "/nouveautes" },
+  { label: "NouveautÃ©s", href: "/nouveautes" },
   { label: "Collection", href: "/collection" },
   { label: "Caftans", href: "/caftans" },
   { label: "Robes", href: "/robes" },
   { label: "Jebbas", href: "/jebbas" },
-  { label: "Takchitas", href: "/takchitas" },
-  { label: "Cérémonie", href: "/ceremonie" },
   { label: "Accessoires", href: "/accessoires" },
 ];
 
