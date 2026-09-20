@@ -12,24 +12,18 @@ interface Props {
 const descriptions: Record<string, string> = {
   Caftan:
     "Des caftans d’apparat, brodés avec patience dans des étoffes choisies pour leur tombé noble et leur lumière.",
-  Takchita:
-    "Des ensembles majestueux où le savoir-faire ancestral rencontre une allure résolument contemporaine.",
   Jebba:
     "Lins naturels, soies sauvages et coupes épurées : la jebba tunisienne pensée pour une élégance quotidienne.",
   Robe:
     "Des silhouettes fluides et précises, imaginées pour les réceptions, cocktails et instants précieux.",
-  CÉRÉMONIE:
-    "Des créations haute couture destinées aux mariages, fiançailles et célébrations d’exception.",
   Accessoire:
     "Ceintures mdamma, étoles en soie sauvage et bijoux chichkhan pour sublimer chaque tenue.",
 };
 
 const categoryMap: Record<string, Category> = {
   caftans: "Caftan",
-  takchitas: "Takchita",
   jebbas: "Jebba",
   robes: "Robe",
-  ceremonie: "CÉRÉMONIE",
   accessoires: "Accessoire",
 };
 
@@ -70,7 +64,7 @@ const CategoryPage: React.FC<Props> = ({ category: propCategory }) => {
       : categoryProducts[0]?.images[0] || "/hero-model.jpg";
 
   const displayName =
-    activeCategory === "CÉRÉMONIE" ? "CÉRÉMONIE" : activeCategory.toUpperCase() + "S";
+    activeCategory === "Jebba" ? "JEBBAS" : activeCategory.toUpperCase() + "S";
 
   return (
     <div className="min-h-screen bg-white">
